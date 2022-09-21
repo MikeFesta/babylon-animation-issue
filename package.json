@@ -1,0 +1,40 @@
+{
+  "name": "babylon-animation-issue",
+  "version": "1.0.0-alpha.1",
+  "description": "Sample app to test Babylon ES6 animation loading.",
+  "main": "index.js",
+  "bin": {
+    "babylon-animation-issue": "bin/app.js"
+  },
+  "scripts": {
+    "help": "webpack --help",
+    "init": "webpack-cli init",
+    "start": "webpack --config webpack.config.js --watch",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/mikefesta/babylon-animation-issue.git"
+  },
+  "keywords": [
+    "babylon",
+    "animation",
+    "es6"
+  ],
+  "author": "Mike Festa",
+  "license": "All rights reserved",
+  "homepage": "https://www.mikefesta.com",
+  "dependencies": {
+    "@babylonjs/core": "^5.18.0",
+    "@babylonjs/loaders": "^5.18.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.3.1",
+    "tslib": "^2.4.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
