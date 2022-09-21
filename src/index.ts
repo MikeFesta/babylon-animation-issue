@@ -17,7 +17,8 @@ import { Engine } from '@babylonjs/core/Engines/engine';
 import { Scene } from '@babylonjs/core/scene';
 import { SceneLoader } from '@babylonjs/core/Loading/sceneLoader';
 import { Vector3 } from '@babylonjs/core/Maths/math.vector';
-import '@babylonjs/loaders/glTF/2.0/glTFLoader';
+//import '@babylonjs/loaders/glTF/2.0/glTFLoader'; // << This was the issue
+import '@babylonjs/loaders/glTF';
 import '@babylonjs/core/Helpers/sceneHelpers';
 
 async function createScene(canvas: HTMLCanvasElement, engine: Engine): Promise<Scene> {

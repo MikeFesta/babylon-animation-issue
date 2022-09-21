@@ -1,4 +1,13 @@
-# Babylon Animation Issue
+# Babylon Animation Issue (RESOLVED)
+
+## Solution
+I was using the wrong import for the gltf loader
+
+It should be:
+import '@babylonjs/loaders/glTF';
+
+and not:
+import '@babylonjs/loaders/glTF/2.0/glTFLoader';
 
 ## Demo app to debug an ES6 issue
 
